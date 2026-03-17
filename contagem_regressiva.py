@@ -1,9 +1,10 @@
-import os
+import os 
 import time
 os.system("cls")
 
-numero = int(input("Digite um numero: "))
+numero=int(input("Informe um numero: "))
 
-for i in range(numero, -0, -1):
-    print(i)
-    time.sleep(1)
+for i in range(numero, 0, -1):
+        print(i)
+        time.sleep(1) 
+        
