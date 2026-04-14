@@ -1,25 +1,29 @@
-import os
-os.system ("cls")
+import os 
+os.system("cls")
 
-altura = float(input("Informe sua altura para o calculo do IMC: "))
-peso = float(input("informe seu peso: "))
+def calcular_imc(peso, altura):
+    return peso / altura ** 2 
 
+altura = float(input("Digite sua altura em metros: "))
+peso = float(input("Digite seu peso em kg: "))
 
-imc = peso / (altura * altura)
+imc = calcular_imc(peso, altura)
 
 print(f"Seu IMC é: {imc:.2f}")
 
 
-if imc <= 18.5:
-    print ("abaixo do peso")
-elif imc >= 18.5 or 24.9:
-    print("Peso ideal")
-elif imc >= 25.0 or 29.9:
-    print("levemente acima do peso")
-elif imc >= 30.0 or 34.9:
-    print("Obesidade grau 1")
-elif imc >= 35.0 or 39.9:
-    print("Obesidade grau 2")
-else:
-    print("ce ta fudido pae")
+match imc:
+    case imc if imc <18.5:
+        print("Você está abaixo do peso.")
+    case imc if 18.5 <= imc < 25:
+        print("Você está com o peso normal.")
+    case imc if 25 <= imc < 30:
+        print("Você está com sobrepeso.")
+    case imc if 30 <= imc < 35:
+        print("Você está com obesidade grau 1.")
+    case imc if 35 <= imc < 40:
+        print("Você está com obesidade grau 2.")
+    case imc if imc >= 40:
+        print("Você está com obesidade grau 3.")
     
+
