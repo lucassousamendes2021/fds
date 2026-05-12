@@ -1,0 +1,35 @@
+/* RESET DAQS CONFIGS DO NAVEGADOR */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+h1{
+font-size: 100px;
+font-style: italic;
+
+}
+
+h2{
+    font-size: 500px;
+    font-style:unset;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-image: url("https://images.genius.com/75025d33952a7faf7178233025b0ae15.1000x333x1.png");
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+}
